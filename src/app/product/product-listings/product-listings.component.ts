@@ -19,7 +19,7 @@ export class ProductListingsComponent {
         console.log('got value ' + data)
         this.products = data
       },
-      (err) => {console.error('something wrong occurred: ' + err)},
+      (err) => {console.log('something wrong occurred: ' + err)},
       () => {console.log('done')}
     )
   }
