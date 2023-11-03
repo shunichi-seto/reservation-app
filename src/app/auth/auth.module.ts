@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthService } from './shared/auth.service';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
     { path: 'login', component: LoginComponent },
@@ -13,11 +14,12 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     LoginComponent,
-    RegisterComponent,
+    RegisterComponent
   ],
   imports: [
     RouterModule.forChild(routes),
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   providers: [
     AuthService
